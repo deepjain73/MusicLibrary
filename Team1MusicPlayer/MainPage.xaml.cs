@@ -86,5 +86,15 @@ namespace Team1MusicPlayer
         {
 
         }
+
+        private void mySearchBox_QuerySubmitted(SearchBox sender, SearchBoxQuerySubmittedEventArgs args)
+        {
+
+        }
+
+        private void AlbumListView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
     }
 }
