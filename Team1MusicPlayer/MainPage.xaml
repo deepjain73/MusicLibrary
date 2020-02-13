@@ -56,7 +56,7 @@
                    OpenPaneLength="200">
             <SplitView.Pane>
                 <ListView Name="AlbumListView" IsItemClickEnabled="True"
-                          ItemClick="AlbumListView_Click" />
+                          ItemClick="AlbumListView_ItemClick" />
 
 
             </SplitView.Pane>
@@ -68,14 +68,14 @@
                     </Grid.RowDefinitions>
                     <MediaElement Name="MyMediaElement" AutoPlay="True"/>
 
-                    <TextBlock Name ="CategoryTextBlock" Text="All Songs......" FontSize="30"/>
+                    <TextBlock Name ="CategoryTextBlock" Text="All Songs" FontSize="30"/>
 
                     <RelativePanel Grid.Row="1" Margin="0,767,0,0" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Width="280" d:LayoutRounding="Auto">
                         <RelativePanel.RenderTransform>
                             <CompositeTransform Rotation="0.251"/>
                         </RelativePanel.RenderTransform>
 
-                     <Button Content="&#xE892;"
+                        <Button Content="&#xE892;"
                     Name="PreviousButton"
                     FontFamily="Segoe MDL2 Assets"
                     Click="PreviousButton_Click"
@@ -131,14 +131,7 @@
                     />
 
                     </RelativePanel>
-
-
-
-
                 </Grid>
-
-
-
             </SplitView.Content>
         </SplitView>
 
